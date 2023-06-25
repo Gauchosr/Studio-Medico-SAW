@@ -10,7 +10,8 @@ Effettuando l'accesso o la registrazione come Medico si ha accesso a una dashboa
   - Visualizzare l'elenco di Richieste di iscrizione effettuate dai Pazienti, accettarle o rifiutarle (la presenza di richieste in pending genererà una notifica push, se queste sono consentite, del sistema in cui l'applicazione viene lanciata)
 Effettuando l'accesso o la registrazione come Paziente si ha accesso a una dashboard in cui è possibile:
    - Visualizzare l'elenco di Medici registrati e le loro informazioni necessarie (Specializzazione, ecc..)
-   - Mandare una Richiesta di iscrizione (questa azione genererà una notifica al momento di avvio dell'applicazione da parte del Medico)
+   - Mandare una Richiesta di iscrizione (questa azione genererà una notifica al momento di avvio dell'applicazione da parte del Medico).
+
 La PWA è installabile sul dispositivo tramite un pulsante posto sul tab del browser.
 Integra una Fallback page che si aprirà in mancanza di rete.
 Utilizza il service worker predefinito di Angular.
