@@ -1,6 +1,7 @@
 # Studio-Medico-SAW
+
 Small university project of a doctor's managerial Progressive Web App using Angular framework and FireBase Real Time Database.
-/------------------------------------------------/
+
 -> La PWA è stata scritta in Angular 
 -> Utilizza il sistema di autenticazione, tramite email e password, di Firebase
 -> Lo scopo della PWA è quello di implementare un softare gestionale di uno Studio Medico
