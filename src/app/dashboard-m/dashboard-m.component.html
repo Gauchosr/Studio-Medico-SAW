@@ -1,0 +1,32 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>home</mat-icon>
+  </button>
+  <span class="titolo">Il tuo studio Medico</span>
+  <div class="spacer"></div>
+  <div class="dott">
+    <span>Dott.</span>
+    <span>{{nome}} {{cognome}}</span>
+  </div>
+  <div class="logout">
+    <button (click)="onLogout()" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>logout</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
+
+<div class="container">
+  <div>
+    <mat-sidenav mode="side" opened class="sidenav">
+      <button routerLink="iscritti" routerLinkActive="active">ISCRITTI</button>
+      <button routerLink="add-paziente" routerLinkActive="active">AGGIUNGI PAZIENTE</button>
+      <button routerLink="nuove-richieste" routerLinkActive="active">NUOVE RICHIESTE</button>
+    </mat-sidenav>
+  </div>
+
+  <div class="content">
+    <div class="main-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

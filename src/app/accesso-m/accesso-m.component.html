@@ -1,0 +1,12 @@
+
+<form #medform = "ngForm" (ngSubmit)="onAccedi(medform)">
+  <mat-form-field>
+    <input matInput type="email" name="email" placeholder="Email" ngModel>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="password" name="password" placeholder="Password" ngModel>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">Accedi</button>
+</form>
+<div *ngIf="errorMessage" id="error-banner">{{ errorMessage }}</div>

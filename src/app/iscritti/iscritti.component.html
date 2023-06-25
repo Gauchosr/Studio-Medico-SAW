@@ -1,0 +1,26 @@
+<span *ngIf="iscritti.length == 0; else elseBlock">Non hai nessuno iscritto da visualizzare</span>
+
+
+<ng-template #elseBlock>
+<table>
+  <tr>
+    <th>No</th>
+    <th>Nome</th>
+    <th>Cognome</th>
+    <th>Email</th>
+    <th>Data di nascita</th>
+    <th>Telefono</th>
+  </tr>
+  <tr *ngFor="let iscritto of iscritti; let i = index">
+    <td>{{ i + 1 }}</td>
+    <td>{{ iscritto.nome }}</td>
+    <td>{{ iscritto.cognome }}</td>
+    <td>{{ iscritto.email }}</td>
+    <td>{{ iscritto.data }}</td>
+    <td>{{ iscritto.telefono }}</td>
+    <button (click)="onEliminaIscritto(iscritto.id)" class="rimuovi">Rimuovi</button>
+  </tr>
+</table>
+</ng-template>
+
+
