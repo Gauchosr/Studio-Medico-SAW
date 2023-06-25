@@ -1,0 +1,90 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.titolo {
+  margin-left: 40px;
+}
+
+.paz{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.paz span:first-child{
+  margin-right: 5px;
+}
+
+.spacer{
+  flex-grow: 1;
+}
+
+.mat-toolbar {
+  grid-row: 1; /* mette la toolbar nella prima riga */
+}
+
+.logout {
+  margin-right: auto;
+  margin-left: 15px;
+}
+
+.container {
+  display: flex;
+
+  width: 120px;
+}
+
+
+
+.sidenav {
+
+
+  background-color: #ccc;
+  }
+
+
+
+.sidenav button {
+    width: 100%;
+    height: 50px;
+    background-color: #f2f2f2;
+    border: none;
+    text-align: left;
+    padding: 10px;
+    padding-right: 70px;
+  }
+
+  .sidenav button:hover {
+    background-color: #e0e0e0;
+  }
+
+  .active{
+    color: #a50c0c;
+  }
+
+
+  .main-content {
+    flex-grow: 1;
+    height: 100%;
+    background-color: #f2f2f2;
+    padding: 0px;
+  }
+
+
+.example-icon{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.content{
+    position: absolute;
+    top: 64px;
+    right: 0;
+    left: 120px;
+    bottom: 0;
+}
